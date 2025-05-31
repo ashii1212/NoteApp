@@ -32,7 +32,7 @@ public class NotesController {
         contentArea.clear();
         refreshNotes();
     }
-
+   // refresh note
     private void refreshNotes() {
         ObservableList<Note> notes = FXCollections.observableArrayList(dao.getAllNotes());
         notesList.setItems(notes);
